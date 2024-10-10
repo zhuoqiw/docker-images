@@ -37,5 +37,5 @@ jobs:
     # 使用shell命令批量同步所需的镜像到阿里云个人仓库中
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-        # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
+         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中。
          skopeo copy docker://docker.io/zhuoqiw/${{ github.event.inputs.tag }} docker://crpi-ql5ibn8gragzo6sn.cn-shanghai.personal.cr.aliyuncs.com/zhuoqiw/${{ github.event.inputs.tag }}
