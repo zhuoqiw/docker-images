@@ -15,7 +15,7 @@ on:
 # 工作流程任务（通常含有一个或多个步骤）
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
  
     # 在job中添加步骤来执行同步操作。在上述job中，添加步骤来执行skopeo命令，从docker.io仓库拉取镜像，并将其推送到阿里云个人仓库。
     steps:
